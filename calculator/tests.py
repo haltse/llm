@@ -1,14 +1,17 @@
-from functions.get_file_content import get_file_content
+from functions.run_python_file import run_python_file
 
 
 def test():
-    result = get_file_content(".", "main.py")
+    result = run_python_file(".", "main.py")
     print(result)
 
-    result = get_file_content(".", "pkg/calculator.py")
+    result = run_python_file(".", "tests.py")
     print(result)
 
-    result = get_file_content(".", "/bin/cat")
+    result = run_python_file(".", "../main.py")
+    print(result)
+
+    result = run_python_file(".", "nonexistent.py")
     print(result)
 
 
