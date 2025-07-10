@@ -1,8 +1,8 @@
 # main.py
 
 import sys
-from pkg.calculator import Calculator
-from pkg.render import render
+from calculator import Calculator
+from render import render
 
 
 def main():
